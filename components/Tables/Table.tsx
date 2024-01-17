@@ -5,88 +5,180 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 const packageData: Package[] = [
   {
-    name: "Free package",
-    price: 0.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Paid",
+    name: "Jacob Jones",
+    dateStart: "9/18/16",
+    noCustodian: 2,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/19",
+    acknowledgement: "101,0%",
+    leadAttorney: "Ralph Edwards",
+    caseType: "text",
   },
   {
-    name: "Standard Package",
-    price: 59.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Paid",
+    name: "Ralph Edwards",
+    dateStart: "9/18/14",
+    noCustodian: 4,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/20",
+    acknowledgement: "105,0%",
+    leadAttorney: "Dianne russell",
+    caseType: "text",
   },
   {
-    name: "Business Package",
-    price: 99.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Unpaid",
+    name: "Floyd Mies",
+    dateStart: "9/18/14",
+    noCustodian: 1,
+    sourceHeld: "text",
+    caseStatus: "private",
+    dateRelease: "7/11/20",
+    acknowledgement: "105,0%",
+    leadAttorney: "Floyd russell",
+    caseType: "text",
   },
   {
-    name: "Standard Package",
-    price: 59.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Pending",
+    name: "Ralph Edwards",
+    dateStart: "9/18/15",
+    noCustodian: 6,
+    sourceHeld: "text",
+    caseStatus: "private",
+    dateRelease: "7/11/21",
+    acknowledgement: "105,0%",
+    leadAttorney: "Floyd Miles",
+    caseType: "text",
   },
   {
-    name: "Standard Package",
-    price: 59.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Paid",
+    name: "Jacob Jones",
+    dateStart: "9/18/16",
+    noCustodian: 2,
+    sourceHeld: "text",
+    caseStatus: "private",
+    dateRelease: "7/11/19",
+    acknowledgement: "101,0%",
+    leadAttorney: "Ralph Edwards",
+    caseType: "text",
   },
   {
-    name: "Business Package",
-    price: 99.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Unpaid",
+    name: "Ralph Edwards",
+    dateStart: "9/18/14",
+    noCustodian: 4,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/20",
+    acknowledgement: "105,0%",
+    leadAttorney: "Dianne russell",
+    caseType: "text",
   },
   {
-    name: "Standard Package",
-    price: 59.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Pending",
+    name: "Floyd Mies",
+    dateStart: "9/18/14",
+    noCustodian: 1,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/20",
+    acknowledgement: "105,0%",
+    leadAttorney: "Floyd russell",
+    caseType: "text",
   },
   {
-    name: "Free package",
-    price: 0.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Paid",
+    name: "Ralph Edwards",
+    dateStart: "9/18/15",
+    noCustodian: 6,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/21",
+    acknowledgement: "105,0%",
+    leadAttorney: "Floyd Miles",
+    caseType: "text",
   },
   {
-    name: "Standard Package",
-    price: 59.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Paid",
+    name: "Jacob Jones",
+    dateStart: "9/18/16",
+    noCustodian: 2,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/19",
+    acknowledgement: "101,0%",
+    leadAttorney: "Ralph Edwards",
+    caseType: "text",
   },
   {
-    name: "Business Package",
-    price: 99.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Unpaid",
+    name: "Ralph Edwards",
+    dateStart: "9/18/14",
+    noCustodian: 4,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/20",
+    acknowledgement: "105,0%",
+    leadAttorney: "Dianne russell",
+    caseType: "text",
   },
   {
-    name: "Standard Package",
-    price: 59.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Pending",
+    name: "Floyd Mies",
+    dateStart: "9/18/14",
+    noCustodian: 1,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/20",
+    acknowledgement: "105,0%",
+    leadAttorney: "Floyd russell",
+    caseType: "text",
   },
   {
-    name: "Standard Package",
-    price: 59.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Paid",
+    name: "Ralph Edwards",
+    dateStart: "9/18/15",
+    noCustodian: 6,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/21",
+    acknowledgement: "105,0%",
+    leadAttorney: "Floyd Miles",
+    caseType: "text",
   },
   {
-    name: "Business Package",
-    price: 99.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Unpaid",
+    name: "Jacob Jones",
+    dateStart: "9/18/16",
+    noCustodian: 2,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/19",
+    acknowledgement: "101,0%",
+    leadAttorney: "Ralph Edwards",
+    caseType: "text",
   },
   {
-    name: "Standard Package",
-    price: 59.0,
-    invoiceDate: `Jan 13,2023`,
-    status: "Pending",
+    name: "Ralph Edwards",
+    dateStart: "9/18/14",
+    noCustodian: 4,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/20",
+    acknowledgement: "105,0%",
+    leadAttorney: "Dianne russell",
+    caseType: "text",
+  },
+  {
+    name: "Floyd Mies",
+    dateStart: "9/18/14",
+    noCustodian: 1,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/20",
+    acknowledgement: "105,0%",
+    leadAttorney: "Floyd russell",
+    caseType: "text",
+  },
+  {
+    name: "Ralph Edwards",
+    dateStart: "9/18/15",
+    noCustodian: 6,
+    sourceHeld: "text",
+    caseStatus: "public",
+    dateRelease: "7/11/21",
+    acknowledgement: "105,0%",
+    leadAttorney: "Floyd Miles",
+    caseType: "text",
   },
 ];
 
@@ -176,18 +268,189 @@ const Table = () => {
           </Link>
         </div>
       </div>
-      <div className="max-w-full overflow-x-auto">
-        <table className="w-full table-auto">
+      <div className="max-w-full overflow-x-auto rounded-xl">
+        <table className="w-full table-auto ">
           <thead>
-            <tr className="bg-gray text-left dark:bg-boxdark bg-opacity-75">
-              <th className="min-w-[220px] py-4 px-4 font-medium text-black dark:text-white xl:pl-11">
-                Package
+            <tr className="bg-gray text-left dark:bg-white dark:bg-opacity-10">
+              <th className="py-4 px-4 font-medium text-black dark:text-white xl:pl-11">
+                <div className="inline-flex gap-4 items-center">
+                  Name
+                  <svg
+                    className="hidden fill-current sm:block"
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M0.410765 0.910734C0.736202 0.585297 1.26384 0.585297 1.58928 0.910734L6.00002 5.32148L10.4108 0.910734C10.7362 0.585297 11.2638 0.585297 11.5893 0.910734C11.9147 1.23617 11.9147 1.76381 11.5893 2.08924L6.58928 7.08924C6.26384 7.41468 5.7362 7.41468 5.41077 7.08924L0.410765 2.08924C0.0853277 1.76381 0.0853277 1.23617 0.410765 0.910734Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
               </th>
-              <th className="min-w-[150px] py-4 px-4 font-medium text-black dark:text-white">
-                Invoice date
+              <th className="py-4 px-4 font-medium text-black dark:text-white">
+                <div className="inline-flex gap-4 items-center">
+                  Date Hold Began
+                  <svg
+                    className="hidden fill-current sm:block"
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M0.410765 0.910734C0.736202 0.585297 1.26384 0.585297 1.58928 0.910734L6.00002 5.32148L10.4108 0.910734C10.7362 0.585297 11.2638 0.585297 11.5893 0.910734C11.9147 1.23617 11.9147 1.76381 11.5893 2.08924L6.58928 7.08924C6.26384 7.41468 5.7362 7.41468 5.41077 7.08924L0.410765 2.08924C0.0853277 1.76381 0.0853277 1.23617 0.410765 0.910734Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
               </th>
-              <th className="min-w-[120px] py-4 px-4 font-medium text-black dark:text-white">
-                Status
+              <th className="py-4 px-4 font-medium text-black dark:text-white">
+                <div className="inline-flex gap-4 items-center">
+                  No. of Custodian
+                  <svg
+                    className="hidden fill-current sm:block"
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M0.410765 0.910734C0.736202 0.585297 1.26384 0.585297 1.58928 0.910734L6.00002 5.32148L10.4108 0.910734C10.7362 0.585297 11.2638 0.585297 11.5893 0.910734C11.9147 1.23617 11.9147 1.76381 11.5893 2.08924L6.58928 7.08924C6.26384 7.41468 5.7362 7.41468 5.41077 7.08924L0.410765 2.08924C0.0853277 1.76381 0.0853277 1.23617 0.410765 0.910734Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+              </th>
+              <th className="py-4 px-4 font-medium text-black dark:text-white">
+                <div className="inline-flex gap-4 items-center">
+                  Source held
+                  <svg
+                    className="hidden fill-current sm:block"
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M0.410765 0.910734C0.736202 0.585297 1.26384 0.585297 1.58928 0.910734L6.00002 5.32148L10.4108 0.910734C10.7362 0.585297 11.2638 0.585297 11.5893 0.910734C11.9147 1.23617 11.9147 1.76381 11.5893 2.08924L6.58928 7.08924C6.26384 7.41468 5.7362 7.41468 5.41077 7.08924L0.410765 2.08924C0.0853277 1.76381 0.0853277 1.23617 0.410765 0.910734Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+              </th>
+              <th className="py-4 px-4 font-medium text-black dark:text-white">
+                <div className="inline-flex gap-4 items-center">
+                  Case Status
+                  <svg
+                    className="hidden fill-current sm:block"
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M0.410765 0.910734C0.736202 0.585297 1.26384 0.585297 1.58928 0.910734L6.00002 5.32148L10.4108 0.910734C10.7362 0.585297 11.2638 0.585297 11.5893 0.910734C11.9147 1.23617 11.9147 1.76381 11.5893 2.08924L6.58928 7.08924C6.26384 7.41468 5.7362 7.41468 5.41077 7.08924L0.410765 2.08924C0.0853277 1.76381 0.0853277 1.23617 0.410765 0.910734Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+              </th>
+              <th className="py-4 px-4 font-medium text-black dark:text-white">
+                <div className="inline-flex gap-4 items-center">
+                  Date Release
+                  <svg
+                    className="hidden fill-current sm:block"
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M0.410765 0.910734C0.736202 0.585297 1.26384 0.585297 1.58928 0.910734L6.00002 5.32148L10.4108 0.910734C10.7362 0.585297 11.2638 0.585297 11.5893 0.910734C11.9147 1.23617 11.9147 1.76381 11.5893 2.08924L6.58928 7.08924C6.26384 7.41468 5.7362 7.41468 5.41077 7.08924L0.410765 2.08924C0.0853277 1.76381 0.0853277 1.23617 0.410765 0.910734Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+              </th>
+              <th className="py-4 px-4 font-medium text-black dark:text-white">
+                <div className="inline-flex gap-4 items-center">
+                  Acknowledgement %
+                  <svg
+                    className="hidden fill-current sm:block"
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M0.410765 0.910734C0.736202 0.585297 1.26384 0.585297 1.58928 0.910734L6.00002 5.32148L10.4108 0.910734C10.7362 0.585297 11.2638 0.585297 11.5893 0.910734C11.9147 1.23617 11.9147 1.76381 11.5893 2.08924L6.58928 7.08924C6.26384 7.41468 5.7362 7.41468 5.41077 7.08924L0.410765 2.08924C0.0853277 1.76381 0.0853277 1.23617 0.410765 0.910734Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+              </th>
+              <th className="py-4 px-4 font-medium text-black dark:text-white">
+                <div className="inline-flex gap-4 items-center">
+                  Lead Attorney
+                  <svg
+                    className="hidden fill-current sm:block"
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M0.410765 0.910734C0.736202 0.585297 1.26384 0.585297 1.58928 0.910734L6.00002 5.32148L10.4108 0.910734C10.7362 0.585297 11.2638 0.585297 11.5893 0.910734C11.9147 1.23617 11.9147 1.76381 11.5893 2.08924L6.58928 7.08924C6.26384 7.41468 5.7362 7.41468 5.41077 7.08924L0.410765 2.08924C0.0853277 1.76381 0.0853277 1.23617 0.410765 0.910734Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
+              </th>
+              <th className="py-4 px-4 font-medium text-black dark:text-white">
+                <div className="inline-flex gap-4 items-center">
+                  Case Type
+                  <svg
+                    className="hidden fill-current sm:block"
+                    width="12"
+                    height="8"
+                    viewBox="0 0 12 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M0.410765 0.910734C0.736202 0.585297 1.26384 0.585297 1.58928 0.910734L6.00002 5.32148L10.4108 0.910734C10.7362 0.585297 11.2638 0.585297 11.5893 0.910734C11.9147 1.23617 11.9147 1.76381 11.5893 2.08924L6.58928 7.08924C6.26384 7.41468 5.7362 7.41468 5.41077 7.08924L0.410765 2.08924C0.0853277 1.76381 0.0853277 1.23617 0.410765 0.910734Z"
+                      fill=""
+                    />
+                  </svg>
+                </div>
               </th>
               <th className="py-4 px-4 font-medium text-black dark:text-white">
                 Actions
@@ -197,30 +460,57 @@ const Table = () => {
           <tbody>
             {rowsToShow.map((product, key) => (
               <tr key={key}>
-                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 pl-9 dark:border-strokedark xl:pl-11">
-                  <h5 className="font-medium text-black dark:text-white">
-                    {product.name}
-                  </h5>
-                  <p className="text-sm">${product.price}</p>
+                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:bg-graydark dark:bg-opacity-50 dark:border-strokedark">
+                  <p className="text-black dark:text-white">{product.name}</p>
                 </td>
-                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:border-strokedark">
+                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:bg-graydark dark:bg-opacity-50 dark:border-strokedark">
                   <p className="text-black dark:text-white">
-                    {product.invoiceDate}
+                    {product.dateStart}
                   </p>
                 </td>
-                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:border-strokedark">
+                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:bg-graydark dark:bg-opacity-50 dark:border-strokedark">
+                  <p className="text-black dark:text-white">
+                    {product.noCustodian}
+                  </p>
+                </td>
+                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:bg-graydark dark:bg-opacity-50 dark:border-strokedark">
+                  <p className="text-black dark:text-white">
+                    {product.sourceHeld}
+                  </p>
+                </td>
+                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:bg-graydark dark:bg-opacity-50 dark:border-strokedark">
                   <p
-                    className={`inline-flex rounded-full bg-opacity-10 py-1 px-3 text-sm font-medium ${product.status === "Paid"
-                      ? "text-success bg-success"
-                      : product.status === "Unpaid"
-                        ? "text-danger bg-danger"
-                        : "text-warning bg-warning"
+                    className={`inline-flex rounded-sm text-white py-1 px-3 text-sm font-medium ${product.caseStatus === "public"
+                      ? "bg-success"
+                      : product.caseStatus === "private"
+                        ? "bg-danger"
+                        : "bg-warning"
                       }`}
                   >
-                    {product.status}
+                    {product.caseStatus}
                   </p>
                 </td>
-                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:border-strokedark">
+                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:bg-graydark dark:bg-opacity-50 dark:border-strokedark">
+                  <p className="text-black dark:text-white">
+                    {product.dateRelease}
+                  </p>
+                </td>
+                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:bg-graydark dark:bg-opacity-50 dark:border-strokedark">
+                  <p className="text-black dark:text-white">
+                    {product.acknowledgement}
+                  </p>
+                </td>
+                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:bg-graydark dark:bg-opacity-50 dark:border-strokedark">
+                  <p className="text-black dark:text-white">
+                    {product.leadAttorney}
+                  </p>
+                </td>
+                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:bg-graydark dark:bg-opacity-50 dark:border-strokedark">
+                  <p className="text-black dark:text-white">
+                    {product.caseType}
+                  </p>
+                </td>
+                <td className="border-b bg-gray bg-opacity-50 border-[#eee] py-5 px-4 dark:bg-graydark dark:bg-opacity-50 dark:border-strokedark">
                   <div className="flex items-center space-x-3.5">
                     <button className="hover:text-primary">
                       <svg

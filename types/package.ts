@@ -1,6 +1,11 @@
 export type Package = {
   name: string;
-  price: number;
-  invoiceDate: string;
-  status: string;
+  dateStart: string;
+  noCustodian: number;
+  sourceHeld: string;
+  caseStatus: string;
+  dateRelease: string;
+  acknowledgement: string;
+  leadAttorney: string;
+  caseType: string;
 };
